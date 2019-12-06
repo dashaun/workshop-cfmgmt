@@ -2,7 +2,8 @@ org: workshop
 space: dacarter
 space-developer:
   ldap_users: []
-  users: []
+  users: 
+  - dacarter@pivotal.io
   saml_users: []
   ldap_groups: []
 space-manager:
