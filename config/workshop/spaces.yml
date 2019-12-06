@@ -1,0 +1,5 @@
+org: workshop
+spaces:
+- snoyes
+- dacarter
+enable-delete-spaces: true
