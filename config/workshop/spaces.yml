@@ -2,4 +2,5 @@ org: workshop
 spaces:
 - snoyes
 - dacarter
+- jake
 enable-delete-spaces: true
