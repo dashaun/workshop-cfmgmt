@@ -1,1 +1,5 @@
 vars.yml
+us-central1-gcp-vars.yml
+us-east4-gcp-vars.yml
+us-west1-gcp-vars.yml
+uaa.yml

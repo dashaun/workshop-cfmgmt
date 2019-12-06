@@ -1,0 +1,8 @@
+users:
+- username: snoyes
+  email: snoyes@pivotal.io
+- username: dacarter
+  email: dacarter@pivotal.io
+- username: jake
+  email: jake@redislabs.com
+
