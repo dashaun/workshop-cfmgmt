@@ -23,12 +23,12 @@ with open(r'uaa.yml') as file:
     uaas = yaml.full_load(file)
     for item, uaa in uaas.items():
     	for target in uaa:
-    		system.os("cf target " + target["target"])
-    		system.os("cf login -u " + target["user_id"] + " -p " + target["secret"] + " -o system")
+    		os.system("cf api " + target["target"])
+    		os.system("cf login -u " + target["user_id"] + " -p " + target["secret"] + " -o system")
 	    # load users
 	        with open(r'users.yml') as users_file:
 	    		users = yaml.full_load(users_file)
 	    		for item, users in users.items():
 	    		   for user in users:
-	    		   	    system.os("cf create user " + user["email"] + " " + randomPassword())
-	    		   	    system.os("cf-mgmt-config space --org workshop --space " + user["username"])
+	    		   	    os.system("cf create-user " + user["email"] + " " + randomPassword())
+	    		   	    os.system("cf-mgmt-config space --org workshop --space " + user["username"])
